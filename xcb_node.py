@@ -162,7 +162,7 @@ class Node:
         #client = Node.Client(client_addr)
         if client_addr is not None:
             self.connect_client(client_addr)
-            self.input_loop
+            self.input_loop()
             print("client started")
 
 server_addr = input("server address (where this server listens): ")
